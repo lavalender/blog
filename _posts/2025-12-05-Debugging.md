@@ -11,11 +11,27 @@ Debugging is the process of finding and fixing errors (bugs) in a program. The t
 - **Logic:** When the code runs but gives the wrong result because of a mistake in thinking or calculations.
 
 <h3>Steps to Debugging</h3>
-There are 5 common steps taken when debugging code. 
--**Identify the problem:** Figure out what isn’t working.
--**Locate the source:** Find the part of the code causing the error.
--**Identify the type of error:** Determine if it’s syntax, logic, runtime, or user error.
--**Fix the error:** Correct the mistake in the code.
--**Test the solution:** Run the program to make sure it works correctly.
+There are 6 common steps taken when debugging code. 
+- **Clarify the code’s purpose:** What is the code trying to accomplish?
+- **Identify the problem:** Figure out what isn’t working.
+- **Locate the source:** Find the part of the code causing the error.
+- **Identify the type of error:** Determine if it’s syntax, logic, runtime, or user error.
+- **Fix the error:** Correct the mistake in the code.
+- **Test the solution:** Run the program to make sure it works correctly.
+
+<h2>Example 1</h2>
+```text = "Hello, world, my name is"
+count = 0
+
+for char in text:
+    if char == "":
+       count += 1
+
+print(count)
+```
+In order to debug the code for this example we follow the steps to debugging. 
+<h3>**Clarifying the code's purpose**</h3>
+This code is intended to 
+
 
 
