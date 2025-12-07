@@ -20,17 +20,18 @@ There are 6 common steps taken when debugging code.
 - **Test the solution:** Run the program to make sure it works correctly.
 
 <h2>Example 1</h2>
-```text = "Hello, world, my name is"
+```python
+text = "Hello, world, my name is "
 count = 0
 
 for char in text:
-    if char == "":
+    if char == " ":
        count += 1
 
 print(count)
 ```
 In order to debug the code for this example we follow the steps to debugging. 
-<h3>**Clarifying the code's purpose**</h3>
+<h4>Clarifying the code's purpose</h4>
 This code is intended to 
 
 
