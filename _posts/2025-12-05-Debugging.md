@@ -25,14 +25,36 @@ text = "Hello, world, my name is "
 count = 0
 
 for char in text:
-    if char == " ":
+    if char == "":
        count += 1
 
 print(count)
 ```
 In order to debug the code for this example we follow the steps to debugging. 
-<h4>Clarifying the code's purpose</h4>
-This code is intended to 
+<h4>Step 1: Clarifying the code's purpose</h4>
+This code is intended to count how many spaces are in a given string
+<h4>Step 2: Identify the problem</h4>
+When the code is run, the spaces in the text are not being counted. 
+<h4>Step 3:Locate The Soure</h4>
+When looking at the code, the error seems to be in the if statement. It checks whether char == a space, but char is never actually a space, so the count never increases.
+<h4>Step 4: Identify the Type of Error</h4>
+This is a logic error because the code doesn’t give the correct result due to a problem in the reasoning.
+<h4>Step 5: Fix the error</h4>
+To fix this error, we need to include a space inside the quotes in the condition, like char == " ".
+This would result in the code being:
+```python
+text = "Hello, world, my name is "
+count = 0
+
+for char in text:
+    if char == " ":
+       count += 1
+
+print(count)
+```
+<h4>Step 6: Test the solution:</h4>
+As a result, the code ran and reported that there are 5 spaces in the text.
 
 
 
+ 
