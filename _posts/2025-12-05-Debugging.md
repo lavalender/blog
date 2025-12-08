@@ -206,4 +206,7 @@ while True:
 <h4>Step 6: Test the solution:</h4>
 As a result, if the correct password is entered, the program prints "Correct password!" and stops immediately. If the password is entered incorrectly, it prints "Incorrect password". After three incorrect attempts, it prints "Too many attempts" and stops.
 
+<h3>Conclusion</h3>
+In conclusion, debugging is an important part of coding because it allows us to identify and fix errors in our programs. By using the six-step debugging process to solve these examples, I was able to learn how to solve common errors in a more efficient and structured way. This process helped me understand the different types of errors, such as syntax errors, user errors, runtime errors, and logic errors. As a result, I can now apply this knowledge to future coding projects, solving errors in my code in a more structured manner.
+
  
