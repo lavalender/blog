@@ -32,15 +32,20 @@ print(count)
 ```
 In order to debug the code for this example we follow the steps to debugging. 
 <h4>Step 1: Clarifying the code's purpose</h4>
-This code is intended to count how many spaces are in a given string
+This code is intended to count how many spaces are in a given string.
+
 <h4>Step 2: Identify the problem</h4>
 When the code is run, the spaces in the text are not being counted. 
+
 <h4>Step 3:Locate The Soure</h4>
 When looking at the code, the error seems to be in the if statement. It checks whether char == a space, but char is never actually a space, so the count never increases.
+
 <h4>Step 4: Identify the Type of Error</h4>
 This is a logic error because the code doesn’t give the correct result due to a problem in the reasoning.
+
 <h4>Step 5: Fix the error</h4>
 To fix this error, we need to include a space inside the quotes in the condition, like char == " ".
+
 This would result in the code being:
 ```python
 text = "Hello, world, my name is "
@@ -52,9 +57,146 @@ for char in text:
 
 print(count)
 ```
+
 <h4>Step 6: Test the solution:</h4>
 As a result, the code ran and reported that there are 5 spaces in the text.
 
+<h2>Example 2</h2>
+```python
+print("give me a number")
+n = input()
+
+for num in range(1, n):
+    if num % 2 < 0:
+        print(num, "is even.")
+    else:
+        print(num, "is odd.")
+``` 
+<h4>Step 1: Clarifying the code's purpose</h4>
+This code is intended to determine if numbers 1 to n are even or odd 
+
+
+<h4>Step 2: Identify the problem</h4>
+When the code is run, the spaces in the text are not being counted. 
+
+<h4>Step 3:Locate The Soure</h4>
+The problem in this code is that the if statement checks if num % 2 < 0, but it should be num % 2 == 0 to detect even numbers. Also, the input() function returns a string, which needs to be converted to an integer, and the current range does not include the input number itself because of how range works.
+
+<h4>Step 4: Identify the Type of Error</h4>
+In this example, there are two kinds of errors. A runtime error because the input() is only a string input function and a logic error because num % 2 < 0 incorrectly checks for even numbers.
+
+<h4>Step 5: Fix the error</h4>
+n order to fix the code the if statement has to be set to == 0 and not less than 0. Additionally for the input it has to be an integer. Lastly in order to include the input for odd or even of the n number you add n +1 to the range to include it.
+
+
+This would result in the code being:
+```python
+print("Give me a number")
+n = int(input())
+
+for num in range(1, n + 1): 
+    if num % 2 == 0:
+        print(num, "is even.")
+    else:
+        print(num, "is odd.")
+```
+
+<h4>Step 6: Test the solution:</h4>
+As a result, if you input the number 3, the code will output: 1 is odd, 2 is even, and 3 is odd.
+
+<h2>Example 3</h2>
+```python
+num = int(input("Enter an integer: "))
+
+if num < -1:
+  print("No negative numbers.")
+else:
+  result = 1
+  for i in range(1, num):
+    result *= i   
+
+  print("Factorial of " + num + "is" + result)
+```
+<h4>Step 1: Clarifying the code's purpose</h4>
+This code is intended to ask user to enter the correct password but only give them 3 attempts
+
+
+<h4>Step 2: Identify the problem</h4>
+When the code is run, an error called TypeError appears. 
+
+<h4>Step 3:Locate The Soure</h4>
+The main issue was that the print statement tried to combine integers and strings using +. The second issue was that the range didn’t include the input number, so the factorial was incomplete. The last issue was that the if statement only checked if the number was less than -1, so -1 would still be allowed even though it’s negative.
+
+<h4>Step 4: Identify the Type of Error</h4>
+In this example, there are two kinds of errors. A runtime error because the input() is only a string input function and a logic error because num % 2 < 0 incorrectly checks for even numbers.
+
+<h4>Step 5: Fix the error</h4>
+To fix the first issue, integers need to be combined with strings using commas instead of +. Then 1 must be added to num so the input number is included in the range. Lastly, the condition num < -1 needed to be changed to num < 0 because anything less than 0 is negative.
+
+This would result in the code being:
+```python
+num = int(input("Enter an integer: "))
+
+if num < 0:
+    print("No negative numbers.")
+else:
+    result = 1
+    for i in range(1, num + 1):
+        result *= i
+
+    print("Factorial of", num, "is", result)
+```
+
+<h4>Step 6: Test the solution:</h4>
+As a result, if you input the number 4, the code will output that the factorial of 4 is 24. If you input the number -1, the code will output that no negative number can be calculated.
+
+<h2>Example 4</h2>
+```python
+num = int(input("Enter an integer: "))
+
+if num < -1:
+  print("No negative numbers.")
+else:
+  result = 1
+  for i in range(1, num):
+    result *= i   
+
+  print("Factorial of " + num + "is" + result)
+```
+<h4>Step 1: Clarifying the code's purpose</h4>
+This code is intended to calculate the factorial of a given number
+
+
+<h4>Step 2: Identify the problem</h4>
+When the code is run, an error called TypeError appears. 
+
+<h4>Step 3:Locate The Soure</h4>
+The main issue was that the print statement tried to combine integers and strings using +. The second issue was that the range didn’t include the input number, so the factorial was incomplete. The last issue was that the if statement only checked if the number was less than -1, so -1 would still be allowed even though it’s negative.
+
+<h4>Step 4: Identify the Type of Error</h4>
+In this example, there are two kinds of errors. A runtime error because the input() is only a string input function and a logic error because num % 2 < 0 incorrectly checks for even numbers.
+
+<h4>Step 5: Fix the error</h4>
+To fix the first issue, integers need to be combined with strings using commas instead of +. Then 1 must be added to num so the input number is included in the range. Lastly, the condition num < -1 needed to be changed to num < 0 because anything less than 0 is negative.
+
+This would result in the code being:
+```python
+num = int(input("Enter an integer: "))
+
+if num < 0:
+    print("No negative numbers.")
+else:
+    result = 1
+    for i in range(1, num + 1):
+        result *= i
+
+    print("Factorial of", num, "is", result)
+```
+
+<h4>Step 6: Test the solution:</h4>
+As a result, if you input the number 3, the code will output: 1 is odd, 2 is even, and 3 is odd.
+
+As a result, if you input the number 4, the code will output that the factorial of 4 is 24. If you input the number -1, the code will output that no negative number can be calculated.
 
 
  
