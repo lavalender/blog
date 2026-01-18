@@ -1,5 +1,5 @@
 <h1>Debugging</h1>
-<img src="images/1_kld8RKRjrouhdp4gWNFmBQ.jpg" alt="Debugging Image">
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*kld8RKRjrouhdp4gWNFmBQ.jpeg" alt="Debugging Image">
 
 <h3>What is Debugging</h3>
 Debugging is the process of finding and fixing errors (bugs) in a program. The term originated from Admiral Grace Hopper in 1947, when her colleagues found a moth in the Harvard computer and she said they were ‘debugging’ it.
